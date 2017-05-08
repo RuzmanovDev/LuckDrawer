@@ -21,7 +21,13 @@ public class LuckyNumberActivity extends AppCompatActivity {
 
     public void onDrawYourLuck(View view) {
         EditText luckyNumberInput = (EditText) findViewById(R.id.luckyNumberEditText);
-        int luckyNumber = Integer.parseInt(luckyNumberInput.getText().toString());
+        String luckyNumberText = luckyNumberInput.getText().toString();
+
+        if (luckyNumberText == null || luckyNumberText.isEmpty()) {
+            luckyNumberText = "1";
+        }
+
+        int luckyNumber = Integer.parseInt(luckyNumberText);
 
         Intent intent = new Intent(this, ResultActivity.class);
         intent.putExtra("asignNumber", this.asignNumber);
