@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LuckyApp</string>
+    <string name="aries">Овен</string>
+    <string name="taurus">Телец</string>
+    <string name="gemini">Близнаци</string>
+    <string name="cancer">Рак</string>
+    <string name="leo">Лъв</string>
+    <string name="virgo">Дева</string>
+    <string name="libra">Везни</string>
+    <string name="scorpio">Скорпион</string>
+    <string name="sagittarius">Стрелец</string>
+    <string name="capricorn">Козирог</string>
+    <string name="aquarius">Водолей</string>
+    <string name="pisces">Риби</string>
+    <string name="luckyNumberLabel">Въведете своето любимо число</string>
+    <string name="drawYourLuck">Изтегли късметче</string>
+    <string name="yourLuckIs">Вашето късметче е</string>
+</resources>
