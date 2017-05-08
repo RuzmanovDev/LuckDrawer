@@ -21,17 +21,20 @@ public class MainActivity extends AppCompatActivity {
     private void fillDb() {
         SharedPreferences.Editor editor = this.preferences.edit();
         editor.putString("1","късмет");
-        editor.putString("2","любов");
-        editor.putString("3","пари");
-        editor.putString("4","коли");
-        editor.putString("5","къща");
+        editor.putString("2","много любов");
+        editor.putString("3","много пари");
+        editor.putString("4","нова кола");
+        editor.putString("5","нова къща");
         editor.putString("6","нова работа");
         editor.putString("7","нова придобивка");
         editor.putString("8","ново начало");
         editor.putString("9","бебе");
         editor.putString("10","ядове");
-        editor.putString("11","здраве");
-
+        editor.putString("11","ново ssd");
+        editor.putString("12","почивка");
+        editor.putString("13","среща");
+        editor.putString("14","щастие");
+        editor.putString("15","безсмъртие");
         editor.commit();
     }
 

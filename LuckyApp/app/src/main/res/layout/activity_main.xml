@@ -6,93 +6,156 @@
     android:layout_height="match_parent"
     tools:context="com.example.stoyanr.luckyapp.MainActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/aries"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/aries" />
+    <Button
+        android:id="@+id/aries"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/aries"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <Button
-            android:id="@+id/tauris"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/taurus" />
+    <Button
+        android:id="@+id/tauris"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/taurus"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/aries"
+        android:layout_marginLeft="8dp" />
 
-        <Button
-            android:id="@+id/gemini"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/gemini" />
+    <Button
+        android:id="@+id/gemini"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/gemini"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/aries"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <Button
-            android:id="@+id/cancer"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/cancer" />
+    <Button
+        android:id="@+id/cancer"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/cancer"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tauris"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/gemini"
+        android:layout_marginLeft="8dp" />
 
-        <Button
-            android:id="@+id/leo"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/leo" />
+    <Button
+        android:id="@+id/leo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/leo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/gemini"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <Button
-            android:id="@+id/virgo"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/virgo" />
+    <Button
+        android:id="@+id/virgo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/virgo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cancer"
+        app:layout_constraintLeft_toRightOf="@+id/leo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <Button
-            android:id="@+id/libra"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/libra" />
+    <Button
+        android:id="@+id/libra"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/libra"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/leo"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <Button
-            android:id="@+id/scorpio"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/scorpio" />
+    <Button
+        android:id="@+id/scorpio"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/scorpio"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/virgo"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/libra"
+        android:layout_marginLeft="8dp" />
 
-        <Button
-            android:id="@+id/sagittarius"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/sagittarius" />
+    <Button
+        android:id="@+id/sagittarius"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/sagittarius"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/libra"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <Button
-            android:id="@+id/capricorn"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/capricorn" />
+    <Button
+        android:id="@+id/capricorn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/capricorn"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/scorpio"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/sagittarius"
+        android:layout_marginLeft="8dp" />
 
-        <Button
-            android:id="@+id/aquarius"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/aquarius" />
+    <Button
+        android:id="@+id/aquarius"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/aquarius"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/sagittarius"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.068" />
 
-        <Button
-            android:id="@+id/pisces"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:onClick="goToLuckyNumberActivity"
-            android:text="@string/pisces" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/pisces"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="goToLuckyNumberActivity"
+        android:text="@string/pisces"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/capricorn"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/aquarius"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.068" />
+
 </android.support.constraint.ConstraintLayout>
